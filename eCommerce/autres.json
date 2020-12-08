@@ -1,0 +1,44 @@
+[
+    {
+        "nom": "pong",
+        "annee": 1976,
+        "photo": "images/pong.png",
+        "description": "Console de 1ère génération.",
+        "prix": 75
+    },
+    {
+        "nom": "atari2600",
+        "annee": 1977,
+        "photo": "images/atari2600.png",
+        "description": "Console de 2ème génération.",
+        "prix": 50
+    },
+    {
+        "nom": "intellivision",
+        "annee": 1979,
+        "photo": "images/intellivision.png",
+        "description": "Console de 2ème génération.",
+        "prix": 30
+    },
+    {
+        "nom": "gameAndWatch",
+        "annee": 1980,
+        "photo": "images/gameAndWatch.png",
+        "description": "Console de 2ème génération.",
+        "prix": 50
+    },
+    {
+        "nom": "atariLynx",
+        "annee": 1989,
+        "photo": "images/atariLynx.png",
+        "description": "Console de 4ème génération.",
+        "prix": 160
+    },
+    {
+        "nom": "commodore64",
+        "annee": 1990,
+        "photo": "images/commodore64.png",
+        "description": "Console de 3ème génération.",
+        "prix": 80
+    }
+]

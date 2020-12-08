@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 6fr 1fr;
+}
+
+header {
+    grid-column: 1 span 1;
+    grid-row: 1 span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(../images/voiture.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px #000;
+    font-size: 3.5em;
+}
+
+main {
+    grid-column: 1 span 1;
+    grid-row: 2 span 6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+}
+
+.containerCategories {
+    width: 80%;
+    min-height: 80%;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carteCategorie {
+    width: 280px;
+    height: 300px;
+    border: 1px solid #000;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.sega {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 50%), url(../images/sega.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.nintendo {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 50%), url(../images/nintendo.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.autres {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 50%), url(../images/retro.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #000;
+}
+
+footer {
+    grid-column: 1 span 1;
+    grid-row: 1 span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f5efb;
+    color: #fff;
+}

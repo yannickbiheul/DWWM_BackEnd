@@ -1,0 +1,44 @@
+[
+    {
+        "nom": "Master System",
+        "annee": 1987,
+        "photo": "images/masterSystem.png",
+        "description": "Console de 3ème génération.",
+        "prix": 80
+    },
+    {
+        "nom": "Megadrive",
+        "annee": 1990,
+        "photo": "images/megadrive.png",
+        "description": "Console de 4ème génération.",
+        "prix": 60
+    },
+    {
+        "nom": "Game Gear",
+        "annee": 1991,
+        "photo": "images/gameGear.png",
+        "description": "Console de 4ème génération.",
+        "prix": 149
+    },
+    {
+        "nom": "Mega CD",
+        "annee": 1993,
+        "photo": "images/megaCD.png",
+        "description": "Console de 4ème génération.",
+        "prix": 95
+    },
+    {
+        "nom": "Saturn",
+        "annee": 1995,
+        "photo": "images/saturn.png",
+        "description": "Console de 5ème génération.",
+        "prix": 96
+    },
+    {
+        "nom": "Dreamcast",
+        "annee": 1999,
+        "photo": "images/dreamcast.png",
+        "description": "Console de 6ème génération.",
+        "prix": 50
+    }
+]

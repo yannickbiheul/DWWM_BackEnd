@@ -1,0 +1,44 @@
+[
+    {
+        "nom": "Nes",
+        "annee": 1985,
+        "photo": "images/nes.png",
+        "description": "Console de 3ème génération.",
+        "prix": 230
+    },
+    {
+        "nom": "Super Nes",
+        "annee": 1991,
+        "photo": "images/superNes.png",
+        "description": "Console de 4ème génération.",
+        "prix": 100
+    },
+    {
+        "nom": "Nintendo 64",
+        "annee": 1996,
+        "photo": "images/nintendo64.png",
+        "description": "Console de 5ème génération.",
+        "prix": 50
+    },
+    {
+        "nom": "GameCube",
+        "annee": 2001,
+        "photo": "images/gamecube.png",
+        "description": "Console de 6ème génération.",
+        "prix": 40
+    },
+    {
+        "nom": "Wii",
+        "annee": 2006,
+        "photo": "images/wii.png",
+        "description": "Console de 7ème génération.",
+        "prix": 190
+    },
+    {
+        "nom": "Switch",
+        "annee": 2017,
+        "photo": "images/switch.png",
+        "description": "Console de 8ème génération.",
+        "prix": 300
+    }
+]

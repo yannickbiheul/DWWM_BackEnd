@@ -12,6 +12,13 @@
             justify-content: center;
             align-items: center;
         }
+        input {
+            width: 200px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 4px 4px 4px #ccc;
+            border-radius: 5px;
+        }
         p {
             display: inline;
         }
@@ -32,6 +39,7 @@ $bonne_rep[2] = "été";
 $vide = "";
 $mauvais = " Mauvaise réponse";
 $bon = " Exact";
+$compteur = 0;
 
 ?>
     
@@ -44,6 +52,7 @@ $bon = " Exact";
                 echo "<p>$vide</p>";
             } else if ($_POST['q1'] == $bonne_rep[0]) {
                 echo "<p style='color:green'>$bon</p>";
+                $compteur++;
             } else {
                 echo "<p style='color:red'>$mauvais</p>";
             }
@@ -57,6 +66,7 @@ $bon = " Exact";
                 echo "<p>$vide</p>";
             } else if ($_POST['q2'] == $bonne_rep[1]) {
                 echo "<p style='color:green'>$bon</p>";
+                $compteur++;
             } else {
                 echo "<p style='color:red'>$mauvais</p>";
             }
@@ -70,12 +80,24 @@ $bon = " Exact";
                 echo "<p>$vide</p>";
             } else if ($_POST['q3'] == $bonne_rep[2]) {
                 echo "<p style='color:green'>$bon</p>";
+                $compteur++;
             } else {
                 echo "<p style='color:red'>$mauvais</p>";
             }
         ?><br>
 
         <input type="submit" value="OK !">
+        <?php
+            if (!isset($_POST['q1']) && !isset($_POST['q2']) && !isset($_POST['q3'])) {
+                echo "<p>$vide</p>";
+            } else {
+                if ($compteur <2) {
+                    echo "<p>Looser ! Vous avez $compteur bonne réponse.</p>";
+                } else {
+                    echo "<p>Vous avez $compteur bonnes réponses.</p>";
+                }
+            }
+        ?>
     </form>
 
 

@@ -32,9 +32,21 @@ $question[0] = "Quelle est la couleur du cheval blanc d'Henri IV ?";
 $question[1] = "Quel est le jour de repos ?";
 $question[2] = "Quelle est la saison la plus chaude ?";
 
+$questions = [
+    "Quelle est la couleur du cheval blanc d'Henri IV ?",
+    "Quel est le jour de repos ?",
+    "Quelle est la saison la plus chaude ?"
+];
+
 $bonne_rep[0] = "blanc";
 $bonne_rep[1] = "dimanche";
 $bonne_rep[2] = "été";
+
+$reponses = [
+    "blanc",
+    "dimanche",
+    "été"
+];
 
 $vide = "";
 $mauvais = " Mauvaise réponse";
@@ -95,6 +107,14 @@ $compteur = 0;
                     echo "<p>Looser ! Vous avez $compteur bonne réponse.</p>";
                 } else {
                     echo "<p>Vous avez $compteur bonnes réponses.</p>";
+                }
+            }
+        ?>
+
+        <?php
+            for ($i = 0; i < $questions.length; $i++) {
+                if ($questions[i] == $reponses[i]) {
+                    $compteur++;
                 }
             }
         ?>

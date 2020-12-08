@@ -18,6 +18,56 @@
 
 <body>
 
+    <form action="formulaire.php" method="POST">
+
+        <div class="prenomNom">
+            <p>
+                <label for="prenom" id="prenom">Votre prénom</label><br>
+                <input type="text" name="prenom">
+            </p>
+            <p>
+                <label for="nom" id="nom">Votre nom</label><br>
+                <input type="text" name="nom">
+            </p>
+        </div>
+        
+        <div class="mailPassword">
+            <p>
+                <label for="email" id="email">Votre email</label><br>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <label for="password" id="password">Votre mot de passe</label><br>
+                <input type="password" name="password">
+            </p>
+        </div>
+        
+        <div class="telDate">
+            <p>
+                <label for="tel" id="tel">N° téléphone</label><br>
+                <input type="tel" name="tel">
+            </p>
+            <p>
+                <label for="date" id="date">Date de naissance</label><br>
+                <input type="date" name="date">
+            </p>
+        </div>
+        
+        <div class="message">
+            <p>
+                <label for="message" id="message">Votre message</label><br>
+                <input type="textarea" name="message">
+            </p>
+        </div>
+        
+        <p>
+            <label for="checkbox" id="checkbox">Console ?</label><br>
+            <input type="checkbox" name="checkbox"> Xbox
+            <input type="checkbox" name="checkbox"> Playstation
+            <input type="checkbox" name="checkbox"> Nintendo
+        </p>
+
+    </form>
 
 </body>
 </html>

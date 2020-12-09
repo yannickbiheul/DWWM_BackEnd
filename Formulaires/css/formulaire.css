@@ -14,13 +14,15 @@ body {
 }
 
 form {
-    border: 1px solid #000;
-    width: 75%;
-    height: 75%;
+    /* border: 1px solid #000; */
+    width: auto;
+    height: auto;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 p {
@@ -41,20 +43,15 @@ input {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.mailPassword {
+.mailTel {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.telDate {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .message {
@@ -62,10 +59,32 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
 }
 
-.message > input {
-    width: 600px;
+.message>p {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.message>p>label {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+textarea {
+    min-width: 300px;
+    width: 80%;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #ccc;
+    padding: 10px;
+    margin: auto;
 }
 
 h1 {

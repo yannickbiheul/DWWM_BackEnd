@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 6fr 1fr;
+}
+
+header {
+    grid-column: 1 span 1;
+    grid-row: 1 span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(../images/nintendo.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+header a {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px #000;
+    font-size: 3.5em;
+}
+
+main {
+    grid-column: 1 span 1;
+    grid-row: 2 span 6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+    position: relative;
+}
+
+.plus {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.containerCategories {
+    width: 60%;
+    min-height: 80%;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carteCategorie {
+    width: 280px;
+    height: 260px;
+    border: 1px solid #000;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #000;
+    position: relative;
+}
+
+.carteCategorie img {
+    width: 65%;
+}
+
+.prix {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+footer {
+    grid-column: 1 span 1;
+    grid-row: 1 span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f5efb;
+    color: #fff;
+}

@@ -24,25 +24,32 @@
 <body>
 
     <?php 
-    
-        $infos = [$_POST['nom'], $_POST['description'], $_POST['annee'], $_POST['image'], $_POST['prix']]; 
 
-        foreach ($infos as $v) {
-            echo "<p>" . $v . "</p>";
+        if (!isset($_POST['nom']) || !isset($_POST['annee']) || !isset($_POST['image']) || !isset($_POST['prix'])) {
+
+            echo "<h4 style='color:red'>Il manque un ou plusieurs champs !</h4>";
+            
+        } else {
+            $infos = [$_POST['nom'], $_POST['description'], $_POST['annee'], $_POST['image'], $_POST['prix']]; 
+
+            foreach ($infos as $v) {
+                echo "<p>" . $v . "</p>";
+            }
+
+            echo "<p>La console " . $_POST['nom'] . " a bien été ajoutée !</p>";
+
+            echo "<a href='formSega.html'>RETOUR</a>";
+
+            $nom = $_POST['nom'];
+            $description = $_POST['description'];
+            $annee = $_POST['annee'];
+            $image = $_POST['image'];
+            $prix = $_POST['prix'];
+
+            $sql = "INSERT INTO `sega` (`id`, `nom`, `description`, `annee`, `image`, `prix`) VALUES (NULL, '" . $nom . "', '" . $description . "', $annee, '" . $image . "', $prix);";
+            $connexion->query($sql);
         }
-
-        echo "<p>La console " . $_POST['nom'] . " a bien été ajoutée !</p>";
-
-        echo "<a href='formSega.html'>RETOUR</a>";
-
-        $nom = $_POST['nom'];
-        $description = $_POST['description'];
-        $annee = $_POST['annee'];
-        $image = $_POST['image'];
-        $prix = $_POST['prix'];
-
-        $sql = "INSERT INTO `sega` (`id`, `nom`, `description`, `annee`, `image`, `prix`) VALUES (NULL, '" . $nom . "', '" . $description . "', $annee, '" . $image . "', $prix);";
-        $connexion->query($sql);
+        
 
         
 

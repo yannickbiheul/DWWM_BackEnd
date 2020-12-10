@@ -42,7 +42,7 @@
         </a>
 
         <?php 
-            $sql = "SELECT * FROM autres";
+            $sql = "SELECT * FROM autres ORDER BY annee ASC";
             $autres = $connexion->query($sql);
             $resultat = $autres->fetchALL();
         ?>

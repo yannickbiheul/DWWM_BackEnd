@@ -42,7 +42,7 @@
         </a>
 
         <?php 
-            $sql = "SELECT * FROM sega";
+            $sql = "SELECT * FROM sega ORDER BY annee ASC";
             $segas = $connexion->query($sql);
             $resultat = $segas->fetchALL();
         ?>

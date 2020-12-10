@@ -13,7 +13,7 @@
     <!-- DESCRIPTION -->
     <meta name='description' content='Le site retroMachin en PHP !'>
     <!-- CSS -->
-    <link rel='stylesheet' href='css/nintendo.css'>
+    <link rel='stylesheet' href='css/autres.css'>
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css2?family=Roboto&display=swap' rel='stylesheet'>
     <!-- jQuery -->
@@ -26,9 +26,9 @@
 
     <header>
         <a href="retroMachin.html">ACCUEIL</a>
-        <h1>NINTENDO</h1>
+        <h1>Autres</h1>
         <?php
-            $moyennePrix = "SELECT AVG(prix) FROM nintendo";
+            $moyennePrix = "SELECT AVG(prix) FROM autres";
             $moyenne = $connexion->query($moyennePrix);
             $laMoyenne = $moyenne->fetch();
             echo "<p class='moyenne'>Prix moyen des consoles : " . (int)$laMoyenne[0] . "€</p>";
@@ -37,14 +37,14 @@
 
     <main>
 
-        <a href="formNintendo.html" class="plus">
+        <a href="formAutres.html" class="plus">
             <h4>+</h4>
         </a>
 
         <?php 
-            $sql = "SELECT * FROM nintendo";
-            $nintendos = $connexion->query($sql);
-            $resultat = $nintendos->fetchALL();
+            $sql = "SELECT * FROM autres";
+            $autres = $connexion->query($sql);
+            $resultat = $autres->fetchALL();
         ?>
 
         <div class="containerCategories">

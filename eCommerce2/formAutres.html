@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>RetroMachin BDD</title>
+    <!-- DESCRIPTION -->
+    <meta name='description' content='RetroMachin avec base de données'>
+    <!-- CSS -->
+    <link rel='stylesheet' href='css/retrobdd.css'>
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css2?family=Roboto&display=swap' rel='stylesheet'>
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src='js/retrobdd.js' defer></script>
+</head>
+
+<body>
+
+    <form method="POST" action="cibleAutres.php">
+
+        <h2>Autres</h2>
+        <p>
+            <label for="nom" id="nom">Nom</label>
+            <input type="text" name="nom">
+        </p>
+        <p>
+            <label for="description">Description</label>
+            <textarea type="text" name="description"></textarea>
+        </p>
+        <p>
+            <label for="annee">Année</label>
+            <input type="text" name="annee">
+        </p>
+        <p>
+            <label for="image">Image</label>
+            <input type="text" name="image">
+        </p>
+        <p>
+            <label for="prix">Prix</label>
+            <input type="text" name="prix">
+        </p>
+
+        <input type="submit" value="Envoyer">
+
+    </form>
+
+    <a href="autres.php">Revenir à "Autres"</a>
+
+</body>
+
+</html>

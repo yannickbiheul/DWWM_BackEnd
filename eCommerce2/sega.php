@@ -27,12 +27,18 @@
     <header>
         <a href="retroMachin.html">ACCUEIL</a>
         <h1>SEGA</h1>
+        <?php
+            $moyennePrix = "SELECT AVG(prix) FROM sega";
+            $moyenne = $connexion->query($moyennePrix);
+            $laMoyenne = $moyenne->fetch();
+            echo "<p class='moyenne'>Prix moyen des consoles : " . (int)$laMoyenne[0] . "€</p>";
+        ?>
     </header>
 
     <main>
 
         <a href="formSega.html" class="plus">
-            <h3>+</h3>
+            <h4>+</h4>
         </a>
 
         <?php 
@@ -45,7 +51,7 @@
             
                 <?php 
                     foreach ($resultat as $value) {
-                        echo "<div class='carteCategorie'><img src='" . $value['image'] . "'><p>" . $value['nom'] . "</p><p>" . $value['description'] . "</p><p>" . $value['annee'] . "</p></div>";
+                        echo "<div class='carteCategorie'><img src='" . $value['image'] . "'><h3>" . $value['nom'] . "</h3><p>" . $value['annee'] . "</p><p class='prix'>" . $value['prix'] . "€</p></div>";
                     }
                 ?>
             

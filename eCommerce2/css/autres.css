@@ -19,7 +19,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(../images/sega.jpg);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(../images/retro.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -57,11 +57,6 @@ main {
     flex-wrap: wrap;
     background: linear-gradient(to right, #fc466b, #3f5efb);
     position: relative;
-}
-
-h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 .plus {
@@ -112,6 +107,11 @@ h3 {
 
 .carteCategorie img {
     width: 65%;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .prix {

@@ -1,5 +1,6 @@
 <?php
 
+    session_start();
     require_once("connect.php");
 
 ?>
@@ -23,6 +24,14 @@
     <!-- INSCRIPTION -->
 
     <div class='liste'>
+
+    <?php 
+        if(isset($_SESSION['name'])) {
+            echo "<h3 style='margin-bottom: 40px;'>Mais " . $_SESSION['name'] . ", tu es déjà inscrit !</h3>";
+        } else {
+            echo "<h3 style='margin-bottom: 40px;'>Inconnu, vous pouvez vous inscrire ici.</h3>";
+        }
+    ?>
 
     <form method="POST" action="">
         <h2>Inscription</h2>

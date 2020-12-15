@@ -80,7 +80,7 @@ input {
     left: 50%;
     transform: translateX(-50%);
     color: red;
-    width: 300px;
+    width: 100%;
     text-align: center;
 }
 
@@ -90,7 +90,7 @@ input {
     left: 50%;
     transform: translateX(-50%);
     color: green;
-    width: 300px;
+    width: 100%;
     text-align: center;
 }
 

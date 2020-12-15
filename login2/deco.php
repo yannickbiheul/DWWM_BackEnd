@@ -1,6 +1,7 @@
 <?php
 
     session_start();
+    session_destroy();
     require_once("connect.php");
 
 ?>
@@ -10,7 +11,7 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Accueil</title>
+    <title>Inscription / Connexion</title>
     <!-- DESCRIPTION -->
     <meta name='description' content='Un essai de login'>
     <!-- CSS -->
@@ -21,20 +22,11 @@
 
 <body>
 
-    <div class="accueil">
-        <h1> 
-            <?php 
-                if(isset($_SESSION['name'])) {
-                    echo "Salut, " . $_SESSION['name'] . " !";
-                } else {
-                    echo "Bonjour, inconnu";
-                }
-            ?>
-        </h1>
-        <a href="inscription.php">Inscription</a>
-        <a href="connexion.php">Connexion</a>
-        <a href="liste.php">Liste</a>
-        <a href="deco.php">Déconnexion</a>
+    <div class="liste">
+        <?php
+            echo "<h3>Vous êtes déconnecté !</h3>";
+        ?>
+        <a href='accueil.php' style="margin-top:40px;">Retour</a>
     </div>
 
 </body>

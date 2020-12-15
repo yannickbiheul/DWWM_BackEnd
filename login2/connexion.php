@@ -1,5 +1,6 @@
 <?php
 
+    session_start();
     require_once("connect.php");
 
 ?>
@@ -41,18 +42,18 @@
                 $passwordC = $_POST['passwordC'];
 
                 // Sélection de la colonne correspondante
-                $sql2 = "SELECT * FROM user WHERE email = '" . $emailC . "'";
-                $user = $connexion->query($sql2);
-                // $user->fetchALL();
-                var_dump($user);
+                $sql = "SELECT * FROM user WHERE email = '" . $emailC . "'";
+                $user = $connexion->query($sql);
+                $ligneUser = $user->fetch();
+                $password_crypted = $ligneUser["password"];
                 
                 // Vérification concordance mots de passe
-                // if (password_verify($passwordC, $user[3])) {
-                //     echo "<p class='succes'>Mot de passe correct</p>";
-                // } else {
-                //     echo "<p class='erreur'>Mot de passe incorrect</p>";
-                // }
-
+                if (password_verify($passwordC, $ligneUser["password"])) {
+                    echo "<p class='succes'>Excellent " . $ligneUser['name'] . ", vous êtes connecté ! </p>";
+                    $_SESSION['name'] = $ligneUser['name'];
+                } else {
+                    echo "<p class='erreur'>Mot de passe incorrect</p>";
+                }
             }
         ?>
     </form>

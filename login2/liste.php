@@ -1,5 +1,6 @@
 <?php
 
+    session_start();
     require_once("connect.php");
 
 ?>
@@ -21,6 +22,14 @@
 <body>
 
     <div class="liste">
+
+    <?php 
+        if(isset($_SESSION['name'])) {
+            echo "<h3 style='margin-bottom: 40px;'>" . $_SESSION['name'] . ", voici la liste des personnes inscrites.</h3>";
+        } else {
+            echo "<h3 style='margin-bottom: 40px;'>Inconnu, voici la liste des personnes inscrites.</h3>";
+        }
+    ?>
 
     <?php
 

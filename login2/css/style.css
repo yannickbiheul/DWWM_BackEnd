@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil>h1 {
+    margin-bottom: 20px;
+}
+
+.accueil>a {
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 4px 4px 4px #ccc;
+    color: #333;
+    margin: 10px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    height: 350px;
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 4px #ccc;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+form>h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+input {
+    outline: none;
+    border: 1px solid #ccc;
+    height: 40px;
+    width: 100%;
+}
+
+.prenom {
+    margin-top: 20px;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+.erreur {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    width: 300px;
+    text-align: center;
+}
+
+.succes {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: green;
+    width: 300px;
+    text-align: center;
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lienListe {
+    text-decoration: none;
+    color: #000;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 4px 4px 4px #ccc;
+}

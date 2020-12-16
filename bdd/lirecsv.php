@@ -7,6 +7,13 @@
         echo "Problème à la connexion : " . $e->getMessage();
     }
 
+    // Fonction printEcho
+    function printEcho($variable) {
+        echo "<pre>";
+        print_r($variable);
+        echo "</pre>";
+    }
+
     // Création d'une fonction pour lire le fichier .csv
     function read($csv) {
 
@@ -35,21 +42,10 @@
     // On appelle la fonction read() sur la variable $csv.
     $csv = read($csv);
 
-    // On teste la variable $csv
-    echo '<pre>';
-    print_r($csv);
-    echo '</pre>';
-
-    // On teste la variable $line
-    echo '<pre>';
-    print_r($line);
-    echo '</pre>';
-
-    // foreach sur $line
-    foreach ($line as $l) {
-        for ($i = 0; $i < $l.length; $i++) {
-            $sql = "INSERT INTO 'csv' ('id', 'nom', 'chiffre', 'nombre') VALUES ($l[$i], $l[$i], $l[$i], $l[$i])";
-        }
+    // On parcourt le tableau $csv pour entrer les données dans la base
+    for ($i = 0; $i < sizeof($csv); $i++) {
+        $sql = "INSERT INTO csv (id, nom, chiffre, nombre) VALUES ('" . $csv[$i][0] . "', '" . $csv[$i][1] . "', '" . $csv[$i][2] . "', '" . $csv[$i][3] . "')";
+        $connex->query($sql);
     }
 
 ?>

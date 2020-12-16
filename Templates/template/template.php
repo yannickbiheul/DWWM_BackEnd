@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <title><?php echo $title ; ?></title>
         <meta charset="UTF-8">
@@ -13,8 +13,8 @@
         
             <ul>
                 <li><a href="index.php?page=accueil">Accueil</a></li>
-                <li><a href="Test">Test</a></li>
-                <li><a href="about">A propos</a></li>
+                <li><a href="index.php?page=test">Test</a></li>
+                <li><a href="index.php?page=about">A propos</a></li>
             </ul>
 
             </nav>

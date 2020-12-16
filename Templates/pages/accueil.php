@@ -1,4 +1,4 @@
-<h1>Contenu du site Internet</h1>
+<h2>Contenu du site Internet</h2>
 <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id 
     placerat odio. Aliquam in eros id sem ultricies pharetra at eu 

@@ -1,4 +1,4 @@
-<h1>Contenu du site de test </h1>
+<h2>Contenu du site de test </h2>
 <p>
     Etiam viverra, erat vel imperdiet sollicitudin, dui 
     justo ornare libero, id blandit velit neque id arcu. Donec 

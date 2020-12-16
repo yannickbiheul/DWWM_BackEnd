@@ -33,6 +33,11 @@ switch($page) :
    		$title = "Site perso :: Page de test" ;
 		include 'pages/test.php' ;
 	break;
+
+	case 'about' :
+		$title = "Site perso :: À propos";
+		include 'pages/about.php';
+	break;
   
     // Si aucun "cas" ne correspond à la valeur de $page
 	default :
@@ -51,3 +56,5 @@ $contenu = ob_get_clean() ;
 
 // On intégre le template qui utilise la variable $contenu 
 include 'template/template.php' ;
+
+?>

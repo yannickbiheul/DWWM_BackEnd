@@ -62,6 +62,8 @@
     } else {
         echo "<h1>Bienvenue sur la page d'accueil !</h1>";
         echo "<a href='controllerCours/addOneCours'>Ajouter un cours</a>";
+        echo "<br>";
+        echo "<a href='controllerEtudiant/addOneEtudiant'>Ajouter un étudiant</a>";
     }
 
 ?>

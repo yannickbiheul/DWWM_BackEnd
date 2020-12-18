@@ -9,4 +9,11 @@
         require_once('views/viewCours.php');
     }
 
+    function getAllCours() {
+        $result = getCours();
+        $ligne = $result->fetchAll(PDO::FETCH_NUM);
+        require_once('views/viewAfficherCours.php');
+    }
+    
+
 ?>

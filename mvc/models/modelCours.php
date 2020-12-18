@@ -18,4 +18,11 @@
         return $result;
     }
 
+    function getCours() {
+        $bdd = connexionBDD();
+        $sql = "SELECT * FROM cours ORDER BY id";
+        $resultGetCours = $bdd->query($sql);
+        return $resultGetCours; 
+    }
+
 ?>

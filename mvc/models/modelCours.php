@@ -25,4 +25,11 @@
         return $resultGetCours; 
     }
 
+    function getOneLine($id) {
+        $bdd = connexionBDD();
+        $sql = "SELECT * FROM cours WHERE id = " . $id;
+        $resultGetCours = $bdd->query($sql);
+        return $resultGetCours; 
+    }
+
 ?>

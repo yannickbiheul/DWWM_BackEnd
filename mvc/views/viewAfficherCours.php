@@ -10,7 +10,7 @@
         </td><td>
         <?php echo $valeur[2] ?>
         <?php echo $valeur[3] ?>
-        <a href="controllerCours/updateCours.$valeur[0]">Modifier</a>
+        <a href="controllerCours/updateCours/$valeur[0]">Modifier</a>
         </td></tr>
     <?php } ?>
 

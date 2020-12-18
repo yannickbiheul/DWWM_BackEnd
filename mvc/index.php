@@ -4,7 +4,7 @@
     /* ----- url : http://localhost:8090/DWWM_BackEnd/mvc/controllerCours/addOneCours ----- */
 
     // Affiche tout le chemin de la page
-    echo "Chemin : " . $_SERVER['SCRIPT_FILENAME'];
+    // echo "Chemin : " . $_SERVER['SCRIPT_FILENAME'];
 
     // Au chargement de la page, son "chemin"" est : C:/xampp/htdocs/DWWM_BackEnd/mvc/index.php
     // Dans la variable $root, on remplace 'index.php' par 'rien' dans le chemin de la page (on le supprime quoi)
@@ -64,6 +64,8 @@
         echo "<a href='controllerCours/addOneCours'>Ajouter un cours</a>";
         echo "<br>";
         echo "<a href='controllerEtudiant/addOneEtudiant'>Ajouter un étudiant</a>";
+        echo "<br>";
+        echo "<a href='controllerCours/getAllCours'>Afficher les cours</a>";
     }
 
 ?>

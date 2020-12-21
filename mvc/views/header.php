@@ -13,10 +13,10 @@
 <body>
 
     <nav>
-        <a href='index.php'>Accueil</a>
+        <a href='http://localhost:8090/DWWM_BackEnd/mvc/'>Accueil</a>
         <a href='controllerCours/addOneCours'>Cours</a>
         <a href='controllerEtudiant/addOneEtudiant'>Etudiants</a>
         <a href='controllerCours/getAllCours'>Afficher les cours</a>
     </nav>
 
-    <h1>Site pour étudiants</h1>
+    <h1>Métis en mieux</h1>

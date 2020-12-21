@@ -36,9 +36,7 @@
             $message = "Tous les champs sont requis.";
             $boolMessage = true;
         }
-        if (!$boolMessage) {
-            echo $message;
-        }
+        
         require_once("views/viewUpdateCours.php");
     }
     

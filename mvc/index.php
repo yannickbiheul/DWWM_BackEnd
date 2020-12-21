@@ -1,5 +1,6 @@
 <?php 
 
+    
     require_once("views/header.php");
 
     /* ----- EXEMPLES POUR AJOUTER UN COURS ----- */
@@ -53,6 +54,7 @@
             if (isset($params[2]) && isset($params[3])) {
                 $action($params[2], $params[3]);
             } else if (isset($params[2])) {
+                print_r($params[2]);
                 $action($params[2]);
             } else {
                 $action();

@@ -53,6 +53,13 @@ h1 {
     align-items: center;
 }
 
+.connexion>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
     border: 1px solid #ccc;
     width: 500px;
@@ -82,4 +89,13 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.valide {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 1.5em;
 }

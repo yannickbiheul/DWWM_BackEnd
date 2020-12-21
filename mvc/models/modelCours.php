@@ -43,7 +43,6 @@
         if (!empty($_POST['code']) && !empty($_POST['titre']) && !empty($_POST['langage'])) {
             $bdd = connexionBDD();
             $requete = $bdd->prepare('UPDATE cours SET code =:code, titre =:titre, langage =:langage WHERE id =:id');
-            
 
             $requete->bindValue(':code', $_POST['code']);
             $requete->bindValue(':titre', $_POST['titre']);

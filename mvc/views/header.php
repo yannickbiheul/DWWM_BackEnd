@@ -6,9 +6,17 @@
     <title></title>
     <!-- DESCRIPTION -->
     <meta name='description' content=''>
-    <link rel="stylesheet" href="../assets/style.css">
+    <base href="http://localhost:8090/DWWM_BackEnd/mvc/">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
+
+    <nav>
+        <a href='index.php'>Accueil</a>
+        <a href='controllerCours/addOneCours'>Cours</a>
+        <a href='controllerEtudiant/addOneEtudiant'>Etudiants</a>
+        <a href='controllerCours/getAllCours'>Afficher les cours</a>
+    </nav>
 
     <h1>Site pour étudiants</h1>

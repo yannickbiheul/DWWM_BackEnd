@@ -15,31 +15,31 @@
         require_once('views/viewAfficherCours.php');
     }
 
-    function getOneCours($id) {
-        $result = getOneLine();
-        $ligne = $result;
-    }
-
     function updateCours($id) {
 
-        $data = getOneCours();
-        print_r($data);
+        $data = getOneCours($id);
 
-        require_once('views/viewUpdateCours.php');
+        $boolMessage = false;
 
         if (!empty($_POST['code']) && !empty($_POST['titre']) && !empty($_POST['langage'])) {
-            $resultatUpdate = updateModelCours($id);
+            $resultUpdate = updateModelCours($id);
 
             if (!$resultUpdate) {
                 $message = "Un problème est survenu, les mises à jour n'ont pas été effectuées !";
+                $boolMessage = true;
                 header('Location:controllerCours/getAllCours');
             } else {
                 $message = "Les mises à jour ont bien été effectuées";
+                $boolMessage = true;
             }
-        } else {
+        } if (empty($_POST['code']) || empty($_POST['titre']) || empty($_POST['langage'])) {
             $message = "Tous les champs sont requis.";
+            $boolMessage = true;
         }
-        require_once('views/viewErrors.php');
+        if (!$boolMessage) {
+            echo $message;
+        }
+        require_once("views/viewUpdateCours.php");
     }
     
 

@@ -25,11 +25,35 @@
         return $resultGetCours; 
     }
 
-    function getOneLine($id) {
+    function getOneCours($id){
+
         $bdd = connexionBDD();
-        $sql = "SELECT * FROM cours WHERE id = " . $id;
-        $resultGetCours = $bdd->query($sql);
-        return $resultGetCours; 
+
+        $sql = "SELECT * FROM cours WHERE id=" .$id ;
+
+        $result = $bdd -> query($sql);
+
+        $data = $result -> fetch(PDO::FETCH_ASSOC);
+
+        return $data;
+
+    }
+
+    function updateModelCours($id) {
+        if (!empty($_POST['code']) && !empty($_POST['titre']) && !empty($_POST['langage'])) {
+            $bdd = connexionBDD();
+            $requete = $bdd->prepare('UPDATE cours SET code =:code, titre =:titre, langage =:langage WHERE id =:id');
+            
+
+            $requete->bindValue(':code', $_POST['code']);
+            $requete->bindValue(':titre', $_POST['titre']);
+            $requete->bindValue(':langage', $_POST['langage']);
+            $requete->bindValue(':id', $id);
+            
+            $resultUpdate = $requete->execute();
+            
+            return $resultUpdate;
+        }
     }
 
 ?>

@@ -1,5 +1,7 @@
 <?php 
 
+    require_once("views/header.php");
+
     /* ----- EXEMPLES POUR AJOUTER UN COURS ----- */
     /* ----- url : http://localhost:8090/DWWM_BackEnd/mvc/controllerCours/addOneCours ----- */
 
@@ -60,12 +62,7 @@
         }
 
     } else {
-        echo "<h1>Bienvenue sur la page d'accueil !</h1>";
-        echo "<a href='controllerCours/addOneCours'>Ajouter un cours</a>";
-        echo "<br>";
-        echo "<a href='controllerEtudiant/addOneEtudiant'>Ajouter un étudiant</a>";
-        echo "<br>";
-        echo "<a href='controllerCours/getAllCours'>Afficher les cours</a>";
+        echo "<h2>Bienvenue sur la page d'accueil !</h2>";
     }
 
 ?>

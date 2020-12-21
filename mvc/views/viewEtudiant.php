@@ -1,23 +1,36 @@
-<!DOCTYPE html>
-<html lang='fr'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title></title>
-    <!-- DESCRIPTION -->
-    <meta name='description' content=''>
-</head>
+<?php require_once("header.php"); ?>
 
-<body>
+    <div class="inscription">
+        <h3>Inscription</h3>
+        <form action="addOneEtudiant" method="POST">
+            <input type="text" name="code" placeholder="code">
+            <input type="text" name="nom" placeholder="nom">
+            <br>
+            <input type="text" name="prenom" placeholder="prenom">
+            <input type="number" name="age" placeholder="age">
+            <br>
+            <input type="email" name="email" placeholder="email">
+            <input type="password" name="password" placeholder="password">
+            <br>
+            <input type="submit" value="Ok">
+        </form>
+    </div>
 
-    <h2>viewEtudiant</h2>
-    <form action="addOneEtudiant" method="POST">
-        <input type="text" name="code" placeholder="code">
-        <input type="text" name="nom" placeholder="nom">
-        <input type="text" name="prenom" placeholder="prenom">
-        <input type="number" name="age" placeholder="age">
-        <input type="submit" value="Ok">
-    </form>
+    <div class="connexion">
+        <h3>Connexion</h3>
+        <form action="addOneEtudiant" method="POST">
+                <input type="text" name="code" placeholder="code">
+                <input type="text" name="nom" placeholder="nom">
+                <br>
+                <input type="text" name="prenom" placeholder="prenom">
+                <input type="number" name="age" placeholder="age">
+                <br>
+                <input type="email" name="email" placeholder="email">
+                <input type="password" name="password" placeholder="password">
+                <br>
+                <input type="submit" value="Ok">
+            </form>
+    </div>
+    
 
-</body>
-</html>
+<?php require_once("footer.php"); ?>

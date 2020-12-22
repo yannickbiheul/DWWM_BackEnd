@@ -8,5 +8,7 @@
     <input type="submit" value="ok">
 </form>
 
+<p><?php echo $message; ?></p>
+
 
 <?php include("footer.php"); ?>

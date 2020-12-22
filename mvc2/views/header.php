@@ -12,10 +12,27 @@
 
 <body>
 
-    <nav>
-        <a href='http://localhost:8090/DWWM_BackEnd/mvc2/'>Accueil</a>
-        <a href='controllerCours/getAllCours'>Cours</a>
-        <a href='controllerEtudiant/addOneEtudiant'>Etudiants</a>
-    </nav>
+    <div class="user">
+        <?php 
+            if(isset($_SESSION['name'])) {
+                echo $_SESSION['name'];
+                echo "<a href='controllerEtudiant/stop'>Déconnexion</a>";
+            } else {
+                echo "";
+            }
+        ?>
+    </div>
 
-    <h1>Métis en mieux</h1>
+    <header>
+        <h1>Métis en mieux</h1>
+        <nav>
+            <a href="http://localhost:8090/DWWM_BackEnd/mvc2/">Accueil</a>
+            <a href="controllerCours/getAllCours">Cours</a>
+            <a href="controllerEtudiant/getAllEtudiants">Étudiants</a>
+        </nav>
+    </header>
+
+    
+    
+
+    

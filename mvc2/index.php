@@ -1,5 +1,7 @@
 <?php 
 
+    session_start();
+
     require_once("views/header.php");
     $root = str_replace('index.php', '', $_SERVER['SCRIPT_FILENAME']);
     define('ROOT', $root);

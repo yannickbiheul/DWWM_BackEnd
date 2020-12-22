@@ -29,6 +29,8 @@
             <a href="http://localhost:8090/DWWM_BackEnd/mvc2/">Accueil</a>
             <a href="controllerCours/getAllCours">Cours</a>
             <a href="controllerEtudiant/getAllEtudiants">Étudiants</a>
+            <a href="controllerEtudiant/addOneEtudiant">Inscription</a>
+            <a href="controllerEtudiant/connexion">Connexion</a>
         </nav>
     </header>
 

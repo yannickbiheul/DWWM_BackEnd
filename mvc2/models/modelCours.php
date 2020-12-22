@@ -2,23 +2,23 @@
 
     require_once("models/model.php");
 
+    /* Afficher les cours */
     function getCours() {
         $bdd = connexionBDD();
         $sql = "SELECT * FROM cours ORDER BY id";
         $resultGetCours = $bdd->query($sql);
+
         return $resultGetCours; 
     }
 
+    /* Ajouter un cours */
     function addCours($pcode, $ptitre, $plangage) {
         $bdd = connexionBDD();
-
-        // Requête préparée (plus sécure)
-        // Evite les attaques injection SQL
         $sql = $bdd->prepare("INSERT INTO cours (code, titre, langage) VALUES (:code, :titre, :langage)");
         $sql->bindValue(":code", $pcode, PDO::PARAM_STR);
         $sql->bindValue(":titre", $ptitre, PDO::PARAM_STR);
         $sql->bindValue(":langage", $plangage, PDO::PARAM_STR);
-        // PDO_PARAM_STR en 3ème argument pas obligatoire
+        
         echo "<p style='color:green'>Données validées !</p>";
         echo "<a href='controllerCours/getAllCours'>Retour aux cours</a>";
 
@@ -26,20 +26,17 @@
         return $result;
     }
 
+    /* Sélectionner un cours */
     function getOneCours($id){
-
         $bdd = connexionBDD();
-
         $sql = "SELECT * FROM cours WHERE id=" .$id ;
-
         $result = $bdd -> query($sql);
-
         $data = $result -> fetch(PDO::FETCH_ASSOC);
 
         return $data;
-
     }
 
+    /* Modifier un cours */
     function updateModelCours($id) {
         if (!empty($_POST['code']) && !empty($_POST['titre']) && !empty($_POST['langage'])) {
             $bdd = connexionBDD();

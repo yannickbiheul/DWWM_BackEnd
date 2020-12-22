@@ -25,7 +25,6 @@
             if (isset($params[2]) && isset($params[3])) {
                 $action($params[2], $params[3]);
             } else if (isset($params[2])) {
-                print_r($params[2]);
                 $action($params[2]);
             } else {
                 $action();
@@ -36,7 +35,7 @@
         }
 
     } else {
-        echo "<h2>Bienvenue sur la page d'accueil !</h2>";
+        echo "<h2>Bienvenue sur Métis en mieux !</h2>";
     }
 
     require_once("views/footer.php");

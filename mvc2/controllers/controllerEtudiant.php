@@ -33,7 +33,9 @@
             if (password_verify($password, $data['mdp'])) {
                 echo "<p class='succes'>Excellent " . $data['prenom'] . ", vous êtes connecté ! </p>";
                 $_SESSION['name'] = $data['prenom'];
-                echo "<a href='http://localhost:8090/DWWM_BackEnd/mvc2/'>Retourner à l'accueil</a>";
+                echo "<a href='http://localhost:8090/DWWM_BackEnd/mvc2/' class='lien'>Retourner à l'accueil</a>";
+                echo "<a href='controllerCours/getAllCours' class='lien'>Voir les cours</a>";
+                echo "<a href='controllerEtudiant/getAllEtudiants' class='lien'>Voir les étudiants</a>";
             } else {
                 echo "<p class='erreur'>Mot de passe incorrect</p>";
             }

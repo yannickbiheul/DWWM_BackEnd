@@ -21,6 +21,7 @@
                 </div>
                 <div class="coursTitre">
                 <?php echo $valeur[2] ?>
+                <a href="controllerCours/inscriptionCours/<?php echo $valeur[0] ?>">Inscription</a>
                 </div>
                 <div class="coursLangage">
                 <?php echo $valeur[3] ?>

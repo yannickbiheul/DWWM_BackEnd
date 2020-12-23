@@ -1,0 +1,47 @@
+@import "general.css";
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../images/pc.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titreImage {
+    /* border: 1px solid #fff; */
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.titreImage>img {
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+}
+
+.titre {
+    /* border: 1px solid #fff; */
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#presentation {
+    min-height: 100vh;
+}

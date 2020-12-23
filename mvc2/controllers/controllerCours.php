@@ -11,8 +11,12 @@
 
     /* Ajouter un cours */
     function addOneCours() {
+        $message = "";
         if (!empty($_POST['code']) && !empty($_POST['titre']) && !empty($_POST['langage'])) {
             addCours($_POST['code'], $_POST['titre'], $_POST['langage']);
+            $message = "Cours ajouté !";
+        } else {
+            $message = "Tous les champs sont requis !";
         }
         require_once('views/viewAjouterCours.php');
     }

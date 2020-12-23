@@ -12,16 +12,15 @@
 
 <body>
 
-    <div class="user">
+    <a href='controllerEtudiant/espaceMembre'><div class="user">
         <?php 
             if(isset($_SESSION['name'])) {
                 echo $_SESSION['name'];
-                echo "<a href='controllerEtudiant/stop'>Déconnexion</a>";
             } else {
                 echo "";
             }
         ?>
-    </div>
+    </div></a>
 
     <header>
         <h1>Métis en mieux</h1>

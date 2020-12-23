@@ -39,7 +39,7 @@
             <input type="text" name="titre" placeholder="Titre">
             <input type="text" name="langage" placeholder="Langage">
             <br>
-            <input type="submit">
+            <input type="submit" class="boutonSubmit">
     </form>
 
 

@@ -45,4 +45,18 @@
 
     }
 
+    function getAllForOneEtudiant($email){
+
+        $bdd = connexionBDD();
+
+        $sql = "SELECT * FROM etudiants WHERE email='" . $email . "'";
+
+        $result = $bdd -> query($sql);
+
+        $data = $result -> fetch(PDO::FETCH_ASSOC);
+
+        return $data;
+
+    }
+
 ?>

@@ -33,8 +33,8 @@
     </div>
 
     <div class="boutons">
-        <a href="controllerEtudiant/addOneEtudiant">Inscription</a>
-        <a href="controllerEtudiant/connexion">Connexion</a>
+        <a href="controllerEtudiant/addOneEtudiant" class="lien">Inscription</a>
+        <a href="controllerEtudiant/connexion" class="lien">Connexion</a>
     </div>
 
 

@@ -63,7 +63,7 @@ h3 {
     width: auto;
     height: auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 50%;
     position: fixed;
     top: 90px;

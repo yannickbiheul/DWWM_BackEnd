@@ -34,13 +34,15 @@
     </div>
 
     <h2>Ajouter un cours</h2>
-    <form action="controllerCours/addOneCours" method="POST">
+    <div class="ajouterCours">
+    <form action="controllerCours/addOneCours" method="POST" class="form2">
             <input type="text" name="code" placeholder="Code">
             <input type="text" name="titre" placeholder="Titre">
             <input type="text" name="langage" placeholder="Langage">
             <br>
             <input type="submit" class="boutonSubmit">
     </form>
+    </div>
 
 
 <?php include("footer.php"); ?>

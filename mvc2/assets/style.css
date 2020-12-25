@@ -4,7 +4,7 @@
                                         /* COURS */
 .affichageCours {
     /* border: 1px solid #000; */
-    width: 75%;
+    width: 95%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -92,6 +92,12 @@
 .coursModif>a {
     text-decoration: none;
     color: var(--red);
+}
+
+.ajouterCours {
+    width: 95%;
+    height: 25%;
+    margin-bottom: 100px;
 }
 
                                         /* ETUDIANTS */

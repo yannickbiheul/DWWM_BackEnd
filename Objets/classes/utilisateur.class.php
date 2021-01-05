@@ -1,22 +1,33 @@
 <?php
 
-    class Utilisateur {
-        private $user_name;
-        private $user_pass;
+    // Création d'une classe Utilisateur
+    abstract class Utilisateur {
+        // Propriétés de la classe
+        protected $user_name;
+        protected $user_pass;
+        protected $user_region;
+        protected $prix_abo;
+        public const ABONNEMENT = 15;
 
-        public function __construct($n, $p) {
-            $this->user_name = $n;
-            $this->user_pass = $p;
-        }
-
+        // Destructeur
         public function __destruct() {
             // code
         }
+        
+        abstract public function setPrixAbo();
 
         public function getNom() {
-            return $this->user_name;
+            echo $this->user_name;
         }
 
-    };
+        public function getPrixAbo() {
+            echo $this->prix_abo;
+        }
+
+        public function __invoke($arg) {
+            echo "Un objet à été utilisé comme une fonction.<br>Argument passé : " . $arg . "<br><br>";
+        }
+
+    }
 
 ?>
